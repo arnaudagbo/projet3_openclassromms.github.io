@@ -1,11 +1,24 @@
+// variables
+$header-color: #559c84;
+$header-font-color: #fdcb46;
+$header-font: 'Montserrat', sans-serif;
 body{
     // fixe toutes les marges du body à 0
     margin: 0;
     // fixe la hauteur minimum d'écran à une hauteur d'écran
     min-height: 100vh;
 }
-header{
+.header {
+    background-color: $header-color;
+    color: $header-font-color;
+    padding: 1rem 0;
+}
+.logo_header{
+    margin: 0; 
     text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    cursor: pointer; 
 }
 .container{
     display: flex;
@@ -17,6 +30,7 @@ header{
 }
 .menu_grid{
     display: flex;
+    // permet d'avoir les 4 menus sur 2 lignes
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -31,4 +45,21 @@ header{
     margin: 1.5rem;
     box-shadow: 0 0 10px 3px #D8D8D8;
     cursor: pointer;
+    flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.footer{
+    width: 100%;
+    background-color: $header-color;
+    // permet de fixer le footer en bas de la fenetre de nav
+    position: fixed;
+    bottom: 0;
+    padding: 0.8rem 0;
+    font-size: 1.2rem;
 }

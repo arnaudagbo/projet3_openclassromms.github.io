@@ -54,12 +54,21 @@ body{
     padding: 0 1rem;
 }
 
+.nav_link{
+    text-decoration: none;
+    color: $header-font-color;
+}
+
+.next{
+    margin-bottom: 50px;
+}
+
 .footer{
     width: 100%;
     background-color: $header-color;
     // permet de fixer le footer en bas de la fenetre de nav
     position: fixed;
     bottom: 0;
-    padding: 0.8rem 0;
+    //padding: 0.8rem 0;
     font-size: 1.2rem;
 }

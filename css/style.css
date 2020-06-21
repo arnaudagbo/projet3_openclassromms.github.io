@@ -52,12 +52,20 @@ body {
   padding: 0 1rem;
 }
 
+.nav_link {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
+.next {
+  margin-bottom: 50px;
+}
+
 .footer {
   width: 100%;
   background-color: #559c84;
   position: fixed;
   bottom: 0;
-  padding: 0.8rem 0;
   font-size: 1.2rem;
 }
 

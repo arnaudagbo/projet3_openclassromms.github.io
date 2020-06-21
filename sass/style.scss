@@ -1,0 +1,34 @@
+body{
+    // fixe toutes les marges du body à 0
+    margin: 0;
+    // fixe la hauteur minimum d'écran à une hauteur d'écran
+    min-height: 100vh;
+}
+header{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 0 4.5rem 0;
+}
+.menu_grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.menu_resto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    margin: 1.5rem;
+    box-shadow: 0 0 10px 3px #D8D8D8;
+    cursor: pointer;
+}

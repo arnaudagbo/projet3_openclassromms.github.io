@@ -2,16 +2,23 @@
 $header-color: #559c84;
 $header-font-color: #fdcb46;
 $header-font: 'Montserrat', sans-serif;
+$note-color: #FCDFDB;
+$chic-color: #FFF5FE;
+$delice-color: #F8F8F8;
+$palette-color: #f9fff9;
+
 body{
     // fixe toutes les marges du body à 0
     margin: 0;
     // fixe la hauteur minimum d'écran à une hauteur d'écran
     min-height: 100vh;
+    // police google fonts
 }
 .header {
     background-color: $header-color;
     color: $header-font-color;
     padding: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
 }
 .logo_header{
     margin: 0; 
@@ -48,6 +55,30 @@ body{
     flex-direction: column;
 }
 
+.note{
+    background-color: $note-color;
+    h2{
+        font-family: 'devonshire', cursive;
+    }
+}
+.chic{
+    background-color: $chic-color;
+    h2{
+        font-family: 'Croissant One', cursive;
+    }
+}
+.delice{
+    background-color: $delice-color;
+    h2{
+        font-family: 'Dancing Script', cursive;
+    }
+}
+.palette{
+    background-color: $palette-color;
+    h2{
+        font-family: 'kaushan script', cursive;
+    }
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -71,4 +102,12 @@ body{
     bottom: 0;
     //padding: 0.8rem 0;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu{
+    background-color: $note-color;
+    padding: 0 2rem;
+    box-shadow: 0 0 10px 3px #D8D8D8;
+    margin-bottom: 50px;
 }

@@ -33,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-bottom: 2rem;
 }
 
 .menu_resto {
@@ -52,6 +53,13 @@ body {
 }
 .note h2 {
   font-family: "devonshire", cursive;
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 0;
+}
+.note h3 {
+  font-size: 2rem;
+  font-family: "itim", cursive;
 }
 
 .chic {
@@ -60,12 +68,21 @@ body {
 .chic h2 {
   font-family: "Croissant One", cursive;
 }
+.chic h3 {
+  font-family: "Crimson Pro", serif;
+  font-size: 2rem;
+}
 
 .delice {
   background-color: #F8F8F8;
 }
 .delice h2 {
   font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+.delice h3 {
+  font-size: 2rem;
+  font-family: "itim", cursive;
 }
 
 .palette {
@@ -73,6 +90,11 @@ body {
 }
 .palette h2 {
   font-family: "kaushan script", cursive;
+  font-size: 2rem;
+}
+.palette h3 {
+  font-size: 2rem;
+  font-family: "itim", cursive;
 }
 
 .nav {
@@ -104,6 +126,21 @@ body {
   padding: 0 2rem;
   box-shadow: 0 0 10px 3px #D8D8D8;
   margin-bottom: 50px;
+}
+
+button {
+  background-color: #559c84;
+  color: #fdcb46;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.2rem 2rem 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
+}
+@media screen and (max-width: 470px) {
+  button {
+    font-size: 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

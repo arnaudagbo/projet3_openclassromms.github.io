@@ -37,19 +37,33 @@ body {
 }
 
 .menu_resto {
+  box-shadow: 0 0 10px 3px #D8D8D8;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 350px;
   height: 500px;
   margin: 1.5rem;
-  box-shadow: 0 0 10px 3px #D8D8D8;
+}
+
+.transition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 1.5rem;
   cursor: pointer;
   flex-direction: column;
+  transform: scale(1);
+  transition: transform 500ms;
+}
+.transition:hover {
+  opacity: 0.8;
+  transform: scale(1.25);
 }
 
 .note {
   background-color: #FCDFDB;
+  color: #3D1319;
 }
 .note h2 {
   font-family: "devonshire", cursive;

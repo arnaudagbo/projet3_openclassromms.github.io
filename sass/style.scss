@@ -3,6 +3,7 @@ $header-color: #559c84;
 $header-font-color: #fdcb46;
 $header-font: 'Montserrat', sans-serif;
 $note-color: #FCDFDB;
+$note-font-color: #3D1319;
 $chic-color: #FFF5FE;
 $delice-color: #F8F8F8;
 $palette-color: #f9fff9;
@@ -45,19 +46,34 @@ body{
     padding-bottom: 2rem;
 }
 .menu_resto{
+    box-shadow: 0 0 10px 3px #D8D8D8;
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 350px;
     height: 500px;
     margin: 1.5rem;
-    box-shadow: 0 0 10px 3px #D8D8D8;
+
+}
+
+.transition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 1.5rem;
     cursor: pointer;
     flex-direction: column;
+    transform: scale(1);
+    transition: transform 500ms;
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.25);
+    }
 }
 
 .note{
     background-color: $note-color;
+    color: $note-font-color;
     h2{
         font-family: 'devonshire', cursive;
         font-size: 2rem;

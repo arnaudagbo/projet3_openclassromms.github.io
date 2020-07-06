@@ -122,10 +122,27 @@ body{
     justify-content: space-between;
     padding: 0 1rem;
 }
+// animation footer
+@keyframes wiggle {
+    0% { transform: translate(1px, 1px); }
+    10% { transform: translate(-1px, -2px); }
+    20% { transform: translate(-3px, 0px); }
+    30% { transform: translate(3px, 2px); }
+    40% { transform: translate(1px, -1px); }
+    50% { transform: translate(-1px, 2px); }
+    60% { transform: translate(-3px, 1px); }
+    70% { transform: translate(3px, 1px); }
+    80% { transform: translate(-1px, -1px); }
+    90% { transform: translate(1px, 2px); }
+    100% { transform: translate(1px, -2px); }
+}
 
 .nav_link{
     text-decoration: none;
     color: $header-font-color;
+    &:hover {
+        animation: wiggle 1s infinite;
+    }
 }
 
 .next{
@@ -160,5 +177,21 @@ button {
     border: none;
     @media screen and (max-width: 470px) {
         font-size: 1.1rem;
+    }
+}
+
+// animation 3 petits points
+@keyframes dots {
+    50% { opacity: 0;}
+}
+span {
+    font-size: 1.7rem;
+    display: inline-block;
+    animation: dots 2s ease-in-out infinite;
+    &:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+    &:nth-child(3) {
+        animation-delay: 0.8s;
     }
 }

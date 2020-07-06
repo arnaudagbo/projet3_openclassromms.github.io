@@ -75,6 +75,9 @@ body {
   font-size: 2rem;
   font-family: "itim", cursive;
 }
+.note i {
+  font-size: 3rem;
+}
 
 .chic {
   background-color: #FFF5FE;

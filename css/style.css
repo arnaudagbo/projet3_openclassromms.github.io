@@ -177,10 +177,126 @@ body {
 }
 
 .menu {
-  background-color: #FCDFDB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 748px;
+  min-height: 1058px;
+  margin: 1.5rem;
   padding: 0 2rem;
+  background-color: #FCDFDB;
+  -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
   box-shadow: 0 0 10px 3px #D8D8D8;
-  margin-bottom: 50px;
+}
+@media screen and (max-width: 870px) {
+  .menu {
+    width: 85%;
+    margin: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+.menu__header {
+  margin: 3rem 0;
+  text-align: center;
+}
+@media screen and (max-width: 870px) {
+  .menu__header {
+    margin: 2rem 0;
+  }
+}
+.menu__header i {
+  font-size: 3rem;
+}
+.menu__heading {
+  margin: 0;
+  padding: 0 1rem;
+  font-weight: normal;
+  font-family: "Devonshire", cursive;
+  font-size: 3rem;
+}
+.menu__content {
+  width: 100%;
+}
+.menu__path {
+  width: 30%;
+}
+.menu__path svg {
+  width: 100%;
+}
+.menu__section__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media screen and (max-width: 870px) {
+  .menu__section__heading {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu__section__title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+.menu__section__title hr {
+  margin: 0;
+  height: 2px;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (max-width: 870px) {
+  .menu__section__title {
+    font-size: 1rem;
+  }
+}
+.menu__section__name {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+@media screen and (max-width: 470px) {
+  .menu__section__name {
+    font-size: 0.9rem;
+  }
+}
+.menu__section__price {
+  margin: 0;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 470px) {
+  .menu__section__price {
+    font-size: 1rem;
+  }
+}
+.menu__section ul {
+  list-style-type: none;
+  padding: 0 4rem;
+  margin: 1.8rem 0 4rem 0;
+}
+@media screen and (max-width: 870px) {
+  .menu__section ul {
+    margin: 0.9rem 0 2rem 0;
+    padding: 0;
+  }
+}
+.menu__section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 870px) {
+  .menu__section li {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu__footer__heading {
+  margin: 0;
+}
+.menu__footer .semiquaver {
+  width: 10%;
+  height: auto;
 }
 
 button {

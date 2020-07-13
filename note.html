@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Croissant+One&family=Dancing+Script:wght@400;500;600;700&family=Devonshire&family=Itim&family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-    <body>
-        <header class="header">
-            <h1 class="logo_header">Ohmyfood</h1>
-        </header>
+<body>
+<header class="header">
+    <h1 class="logo_header" onclick="location.href='index.html'">Ohmyfood</h1>
+</header>
 
         <main class="container">
             <h2>La note enchantée</h2>
@@ -21,87 +20,119 @@
                 <div class="menu_card">
                     <section>
                         <div>
-                            <div>
-                                <h2>La note enchantée</h2>
+                            <header class="menu__header"> 
                                 <i class="fa fa-music" aria-hidden="true"></i>
-                                <h3>Prélude</h3>
-                                <hr/>
-                            </div> 
-                            
+                                <h2 class="menu__heading">La note enchantée</h2>
+                            </header>
                         </div>
-                        <ul>
-                            <li>
-                                <p>Ravioles de foie gras accompagnés de leur crème à la truffe</p>
-                                <p>98€</p>
-                            </li>
-                            <li>
-                                <p>Caviar osciètre sur blini à la farine de blé noir</p>
-                                <p>115€</p>
-                            </li>
-                            <li>
-                                <p>Homard et espuma de potiron mariné aux zests d'orange</p>
-                                <p>89€</p>
-                            </li>
-                            <li>
-                                <p>Foie fras de canard cuit entier, confiture de figue et pain toasté</p>
-                                <p>105€</p>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <div>
-                            <div>
-                                <h3>Point d'orgue</h3>
-                                <hr/>
-                            </div>
-                            
+                        <div class="menu__content">
+                            <section class="menu__section menu__starter">
+                                <div class="menu__section__heading">
+                                    <div class="menu__path menu__path--starter">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290" height="10" viewBox="0 0 290 10">
+                                            <image id="path-left-enchanted-note-starter" width="290" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAAAKCAYAAAAQNlNZAAACNklEQVRoge2av0vDQBTHz9JBMKHoYtJBKMbbxJROTo4iSEfBv8BRHN2cFP8FF/VvUNRJLQpOxUC3NBBwaM6lIong4CAXOInX/DY2afs+U2kul8u7l+9L3ntTX2YXcWDHduYeWw/N1x6psUOGbqiO7VT4wUEoWNEEUXiPO97LjCj0FbykxR2vNtRWzKF6mvUAEw/O2ADghxy8ELkitN3cenJspwjrywRBFJCClyy/ufxEbNEVUbHP/y9VpRdJlswEa2IOl7UjJ73+pDFgb62trbHfxLJq3iCLIgKtY9uzhm5M/9WGYX7oR1QwjwrYMf21ED7ChAgTi9S09vPa+cnpPumR/Fc24qiN+i+H09rP8jDvSMHKpyCKb3lb8S9vxlEQiywQTlAYw7b3KML7qBe6Z3Tvgo5nIIK/BNAVopvL68Pjg6P9sbU4AACFgQVJqSqZ65sbZ/SrhAoR3tvZvYcIAgBAHlzcXa2WELzGAgCQI4ZuLJdgAwAAyBMFK50yTVJP+i7wSbugRF1QNc3Qu+qH7cz5zR1WjTH0rjxO1UkAiAvLE9H8kCAK/TLNbNOyYtgD8R8VmKw+B9na/MRjviqZkiyb3PgOvXGfqVKXMdWGmua0gRIzDQqkRxbSrqOohNg8Fkl72HjCAgVPWCXOC7EsGarLg3gFhh5cadRvUXAV7eeZc5PViOuzYHAnZ9lvAA1iwCgTy39pTx7Nf0SN8+trCpmzQoU5re2C3vb9yvEp+uYYyZ5HhNA30OkL5y98TH4AAAAASUVORK5CYII="/>
+                                        </svg>
+                                    </div>
+                                    <div class="menu__section__title">
+                                        <h3 class="menu__section__title">Prélude</h3>
+                                        <hr/>
+                                    </div> 
+                                    <div class="menu__path menu__path--starter">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="292" height="12" viewBox="0 0 292 12">
+                                            <image id="path-right-enchanted-note-starter" width="292" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAAAMCAYAAADLccADAAACb0lEQVRoge2aQWvUQBTHRwzdQ2eop3US1lPTSEGw2wVFVPCw3vwGHtpeevRavOlF2VOxB6EfwpOCokUXdsFT6PaiuBtQ2pJMCy2WjAfBg8zqwBCSSVOTbty+3ymbZF9m3oR/Zub9z/36OkAZaUZu38gaAAAAIA7j77mhyLCA1ZjPLHG85W7ekPf33N41eczDcMrrexVqUURNcx8THNqO/VmNfbVR/5iUbWpRn5p0N+k6D7mIfznraMW1Iwmv783ykJMinyE5aX/ybEME+IAApUXMkJqtx09b3XZnnoccRmpMwQQj25nZL6J31KK71KR+njEvWnSHmmbih0vHP4g2iPWIMbrtzt03L1/Pn+ksnAHEx6bnblYL6amLRNz/+h2aa9RjxTpN3CYJ/m47M1rxS1sVjAm5iLmx5fauj3miACAVjVhXu+3ONGQwHt3MWwi5EHT5e9qxP2FCjmzH/oIJPooTMYPz7HspAAAAKGXmHXP+niJWPxeWl57dunP7nSpM55+3nlR2vm03WMAmIcMAAJwGhweHxoe372/uBezKXKN+MFGZGC57Zdm/KatBLAhqez67hP5U3Szms5psHwuCKvMZDNgxWVxeeiVyCHt0AJCMmC2trq/dxwS/yOJDivqPhujK2qp1IPIfIkrvSQ8qbPMVAIBSIkXpJMbIookVPonqlYrD6w9mf4T8QvJ1vQfJ6w+qYH8AgNNFbI6vrq89KKMgjRKtGKJjGh3VZa8mjnaWqMSCZTIw1gjLxcqjhyvCGgGCVG5SBTKK6qovM0nL+VEgy9Fxj1Y9REXkVimB5+7qz4M8PVTR/kU8XhsIIfQbUQkoYF7mJg8AAAAASUVORK5CYII="/>
+                                        </svg>                                  
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <p class="menu__section__name">Ravioles de foie gras accompagnés de leur crème à la truffe</p>
+                                        <p class="menu__section__price">98€</p>
+                                    </li>
+                                    <li>
+                                        <p class="menu__section__name">Caviar osciètre sur blini à la farine de blé noir</p>
+                                        <p class="menu__section__price">115€</p>
+                                    </li>
+                                    <li>
+                                        <p class="menu__section__name">Homard et espuma de potiron mariné aux zests d'orange</p>
+                                        <p class="menu__section__price">89€</p>
+                                    </li>
+                                    <li>
+                                        <p class="menu__section__name">Foie fras de canard cuit entier, confiture de figue et pain toasté</p>
+                                        <p class="menu__section__price">105€</p>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="menu__section menu__dish">
+                                <div class="menu__section__heading">
+                                    <div class="menu__path menu__path--dish">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290" height="10" viewBox="0 0 290 10">
+                                            <image id="path-left-enchanted-note-dish" width="290" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAAAKCAYAAAAQNlNZAAACNklEQVRoge2av0vDQBTHz9JBMKHoYtJBKMbbxJROTo4iSEfBv8BRHN2cFP8FF/VvUNRJLQpOxUC3NBBwaM6lIong4CAXOInX/DY2afs+U2kul8u7l+9L3ntTX2YXcWDHduYeWw/N1x6psUOGbqiO7VT4wUEoWNEEUXiPO97LjCj0FbykxR2vNtRWzKF6mvUAEw/O2ADghxy8ELkitN3cenJspwjrywRBFJCClyy/ufxEbNEVUbHP/y9VpRdJlswEa2IOl7UjJ73+pDFgb62trbHfxLJq3iCLIgKtY9uzhm5M/9WGYX7oR1QwjwrYMf21ED7ChAgTi9S09vPa+cnpPumR/Fc24qiN+i+H09rP8jDvSMHKpyCKb3lb8S9vxlEQiywQTlAYw7b3KML7qBe6Z3Tvgo5nIIK/BNAVopvL68Pjg6P9sbU4AACFgQVJqSqZ65sbZ/SrhAoR3tvZvYcIAgBAHlzcXa2WELzGAgCQI4ZuLJdgAwAAyBMFK50yTVJP+i7wSbugRF1QNc3Qu+qH7cz5zR1WjTH0rjxO1UkAiAvLE9H8kCAK/TLNbNOyYtgD8R8VmKw+B9na/MRjviqZkiyb3PgOvXGfqVKXMdWGmua0gRIzDQqkRxbSrqOohNg8Fkl72HjCAgVPWCXOC7EsGarLg3gFhh5cadRvUXAV7eeZc5PViOuzYHAnZ9lvAA1iwCgTy39pTx7Nf0SN8+trCpmzQoU5re2C3vb9yvEp+uYYyZ5HhNA30OkL5y98TH4AAAAASUVORK5CYII="/>
+                                        </svg>
+                                    </div>
+                                    <div class="menu__section__title">
+                                        <h3 class="menu__section__title">Point d'orgue</h3>
+                                        <hr/>
+                                    </div>
+                                    <div class="menu__path menu__path--dish">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="292" height="12" viewBox="0 0 292 12">
+                                            <image id="path-right-enchanted-note-dish" width="292" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAAAMCAYAAADLccADAAACb0lEQVRoge2aQWvUQBTHRwzdQ2eop3US1lPTSEGw2wVFVPCw3vwGHtpeevRavOlF2VOxB6EfwpOCokUXdsFT6PaiuBtQ2pJMCy2WjAfBg8zqwBCSSVOTbty+3ymbZF9m3oR/Zub9z/36OkAZaUZu38gaAAAAIA7j77mhyLCA1ZjPLHG85W7ekPf33N41eczDcMrrexVqUURNcx8THNqO/VmNfbVR/5iUbWpRn5p0N+k6D7mIfznraMW1Iwmv783ykJMinyE5aX/ybEME+IAApUXMkJqtx09b3XZnnoccRmpMwQQj25nZL6J31KK71KR+njEvWnSHmmbih0vHP4g2iPWIMbrtzt03L1/Pn+ksnAHEx6bnblYL6amLRNz/+h2aa9RjxTpN3CYJ/m47M1rxS1sVjAm5iLmx5fauj3miACAVjVhXu+3ONGQwHt3MWwi5EHT5e9qxP2FCjmzH/oIJPooTMYPz7HspAAAAKGXmHXP+niJWPxeWl57dunP7nSpM55+3nlR2vm03WMAmIcMAAJwGhweHxoe372/uBezKXKN+MFGZGC57Zdm/KatBLAhqez67hP5U3Szms5psHwuCKvMZDNgxWVxeeiVyCHt0AJCMmC2trq/dxwS/yOJDivqPhujK2qp1IPIfIkrvSQ8qbPMVAIBSIkXpJMbIookVPonqlYrD6w9mf4T8QvJ1vQfJ6w+qYH8AgNNFbI6vrq89KKMgjRKtGKJjGh3VZa8mjnaWqMSCZTIw1gjLxcqjhyvCGgGCVG5SBTKK6qovM0nL+VEgy9Fxj1Y9REXkVimB5+7qz4M8PVTR/kU8XhsIIfQbUQkoYF7mJg8AAAAASUVORK5CYII="/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <p class="menu__section__name">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
+                                        <p class="menu__section__price">102€</p>
+                                    </li>
+                                    <li>
+                                        <p class="menu__section__name">Langoustine poêlée, purée de patate douce</p>
+                                        <p class="menu__section__price">205€</p>
+                                    </li>
+                                    <li>
+                                        <p class="menu__section__name">Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
+                                        <p class="menu__section__price">169€</p>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="menu__section menu__dessert">
+                                <div class="menu__section__heading">
+                                    <div class="menu__path menu__path--dessert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290" height="10" viewBox="0 0 290 10">
+                                            <image id="path-left-enchanted-note-dessert" width="290" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAAAKCAYAAAAQNlNZAAACNklEQVRoge2av0vDQBTHz9JBMKHoYtJBKMbbxJROTo4iSEfBv8BRHN2cFP8FF/VvUNRJLQpOxUC3NBBwaM6lIong4CAXOInX/DY2afs+U2kul8u7l+9L3ntTX2YXcWDHduYeWw/N1x6psUOGbqiO7VT4wUEoWNEEUXiPO97LjCj0FbykxR2vNtRWzKF6mvUAEw/O2ADghxy8ELkitN3cenJspwjrywRBFJCClyy/ufxEbNEVUbHP/y9VpRdJlswEa2IOl7UjJ73+pDFgb62trbHfxLJq3iCLIgKtY9uzhm5M/9WGYX7oR1QwjwrYMf21ED7ChAgTi9S09vPa+cnpPumR/Fc24qiN+i+H09rP8jDvSMHKpyCKb3lb8S9vxlEQiywQTlAYw7b3KML7qBe6Z3Tvgo5nIIK/BNAVopvL68Pjg6P9sbU4AACFgQVJqSqZ65sbZ/SrhAoR3tvZvYcIAgBAHlzcXa2WELzGAgCQI4ZuLJdgAwAAyBMFK50yTVJP+i7wSbugRF1QNc3Qu+qH7cz5zR1WjTH0rjxO1UkAiAvLE9H8kCAK/TLNbNOyYtgD8R8VmKw+B9na/MRjviqZkiyb3PgOvXGfqVKXMdWGmua0gRIzDQqkRxbSrqOohNg8Fkl72HjCAgVPWCXOC7EsGarLg3gFhh5cadRvUXAV7eeZc5PViOuzYHAnZ9lvAA1iwCgTy39pTx7Nf0SN8+trCpmzQoU5re2C3vb9yvEp+uYYyZ5HhNA30OkL5y98TH4AAAAASUVORK5CYII="/>
+                                        </svg>
+                                    </div>
+                                    <div class="menu__section__title">
+                                        <h3 class="menu__section__title">Mouvement final</h3>
+                                        <hr/>
+                                    </div>
+                                    <div class="menu__path menu__path--dessert">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="292" height="12" viewBox="0 0 292 12">
+                                            <image id="path-right-enchanted-note-dessert" width="292" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAAAMCAYAAADLccADAAACb0lEQVRoge2aQWvUQBTHRwzdQ2eop3US1lPTSEGw2wVFVPCw3vwGHtpeevRavOlF2VOxB6EfwpOCokUXdsFT6PaiuBtQ2pJMCy2WjAfBg8zqwBCSSVOTbty+3ymbZF9m3oR/Zub9z/36OkAZaUZu38gaAAAAIA7j77mhyLCA1ZjPLHG85W7ekPf33N41eczDcMrrexVqUURNcx8THNqO/VmNfbVR/5iUbWpRn5p0N+k6D7mIfznraMW1Iwmv783ykJMinyE5aX/ybEME+IAApUXMkJqtx09b3XZnnoccRmpMwQQj25nZL6J31KK71KR+njEvWnSHmmbih0vHP4g2iPWIMbrtzt03L1/Pn+ksnAHEx6bnblYL6amLRNz/+h2aa9RjxTpN3CYJ/m47M1rxS1sVjAm5iLmx5fauj3miACAVjVhXu+3ONGQwHt3MWwi5EHT5e9qxP2FCjmzH/oIJPooTMYPz7HspAAAAKGXmHXP+niJWPxeWl57dunP7nSpM55+3nlR2vm03WMAmIcMAAJwGhweHxoe372/uBezKXKN+MFGZGC57Zdm/KatBLAhqez67hP5U3Szms5psHwuCKvMZDNgxWVxeeiVyCHt0AJCMmC2trq/dxwS/yOJDivqPhujK2qp1IPIfIkrvSQ8qbPMVAIBSIkXpJMbIookVPonqlYrD6w9mf4T8QvJ1vQfJ6w+qYH8AgNNFbI6vrq89KKMgjRKtGKJjGh3VZa8mjnaWqMSCZTIw1gjLxcqjhyvCGgGCVG5SBTKK6qovM0nL+VEgy9Fxj1Y9REXkVimB5+7qz4M8PVTR/kU8XhsIIfQbUQkoYF7mJg8AAAAASUVORK5CYII="/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <p class="menu__section__name">Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
+                                    </li>
+                                    <li>
+                                        <p class="menu__section__name">Baba au rhum revisité avec son coulis de citron</p>
+                                    </li>
+                                    <li>
+                                        <p class="menu__section__name">Tarte au citron meringuée destructurée</p>
+                                    </li>
+                                </ul>
+                            </section>
                         </div>
-                        <ul>
-                            <li>
-                                <p>Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
-                                <p>102€</p>
-                            </li>
-                            <li>
-                                <p>Langoustine poêlée, purée de patate douce</p>
-                                <p>205€</p>
-                            </li>
-                            <li>
-                                <p>Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-                                <p>169€</p>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <div>
-                            
-                            <div>
-                                <h3">Mouvement final</h3>
-                                <hr/>
-                            </div>
-                            
-                        </div>
-                        <ul>
-                            <li>
-                                <p>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
-                            </li>
-                            <li>
-                                <p>Baba au rhum revisité avec son coulis de citron</p>
-                            </li>
-                            <li>
-                                <p>Tarte au citron meringuée destructurée</p>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
                 
         </article> 
         </main>   
-            <footer class="footer">
-                    <nav class="nav">
-                        <a class="nav_link" href="Mentionslégales.html"><h4 class="mentions">Mentions légales</h4></a>
-                        <a class="nav_link" href="mailto:agbo.arnaud@yahoo.fr"><h4 class="contact">Contactez-nous</h4></a>
-                    </nav>
-                </footer>
-                <script src="https://kit.fontawesome.com/60faac5768.js" crossorigin="anonymous"></script>
+        <footer class="footer">
+            <nav class="nav">
+                <a class="nav_link" href="Mentionslégales.html"><h4 class="mentions">Mentions légales</h4></a>
+                <a class="nav_link" href="mailto:agbo.arnaud@yahoo.fr"><h4 class="contact">Contactez-nous</h4></a>
+            </nav>
+        </footer>
+        <script src="https://kit.fontawesome.com/60faac5768.js" crossorigin="anonymous"></script>
     </body>
 </html>

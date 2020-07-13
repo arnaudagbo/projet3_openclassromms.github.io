@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh my food</title>
+    <!-- polices  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Croissant+One&family=Dancing+Script:wght@400;500;600;700&family=Devonshire&family=Itim&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="logo_header" onclick="location.href='index.html'">Ohmyfood</h1>
+</header>
+<main class="container">
+    <h2 class="container__heading">Le délice des papilles</h2>
+    <article class="menu menu--taste-buds-delight">
+        <header class="menu__header">
+            <h2 class="menu__heading">Le délice des papilles</h2>
+        </header>
+        <div class="menu__content">
+            <section class="menu__section menu__starter">
+                <div class="menu__section__heading">
+                    <div class="menu__path menu__path--starter">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="15" viewBox="0 0 343 15">
+                            <image id="path-left-taste-buds-delight-starter" width="343" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVcAAAAPCAYAAABQm4w2AAACVElEQVR4nO3cTWjTcBjH8Sdp0m6tbimCYFXYijso+Eq2Q5k6tIpM8VDtehJkXhTEgyCbR8GDIF5EEEF32cl19TIUYVNEoSCUsRccSF3dRDYYrA2jq51NM3lqs81StbU38/tc/lCSQEL48udpqXDj3nz4cqjukeIijYhiBAAANRNnF6mpLZAcvtOX7dGWyU9EKh4rAEBthOmvKT/HNbVE5G4g6g45B7tOOcJej5DAThYA4N8Ii6mU+vzN986LN9O3zCuIqwYFzm2KnWkVh0532F8UP0ZoAQAqxHHlI9Urd7MPn0XSqiGIhTM5sGy7R6KTPnnkrN8x5DsgRYuXRWgBAP7AjCvxvDVwbSkyOaU3lB5usxGt6gbZG2XqbBNHm5vlxJFD0rs9LdJU8YswQnABANatxZWNx43u4FXtCc9fK7Vzm0jeHbaZLY2U5OjyaXu94qRbETU8ZwCwApdLTO9vESc2bjJ/iSuPB8bjxr5qA8s723x+fQUAsJr3EXfI6xEGzNsWS+4/xvUNP1Au8Y60UmZQEVYAsKqBlyvBjT9lLVfQQmBf9ysnOo7VJ/CmAAD8Xd/TzHltmRTzQFtPb2+5k+bq7JToOi5H21X5w/yCsXt2zlDwfAEAysuuENkdgrP9oPSZG1o6c/0dNTqm+/qH9QuvRjJqNfNYAAArMWevlcbVVJgncGjfjuqHY2M5deJjrgmxBQD46WirPDN4f3Ow2riWWhvecnB55ejyqiXzyqcvxq5vOjnrJcrwGp/ObUWIAeB/d/u663Gtca0G/hAGAKyBiH4ALEPUYRVF2cwAAAAASUVORK5CYII="/>
+                        </svg>
+                    </div>
+                    <div class="menu__section__title">
+                        <h3 class="menu__section__title">Pour bien commencer</h3>
+                        <hr/>
+                    </div>
+                    <div class="menu__path menu__path--starter">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="15" viewBox="0 0 343 15">
+                            <image id="path-right-taste-buds-delight-starter" width="343" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVcAAAAPCAYAAABQm4w2AAACPklEQVR4nO3cPUwTYRzH8X+vV2KhMWc3B02DEBMJL2keGEhUIu2iYQEdddCBxA0GXiZHcTBdGCBEFiYkMhglBIjxJekAFwKauGAKRsCEpPQgFCm9Pph/8fQKNW2Ryf4+y6XXdrgnT7558ty1jmgsRgAAcCqEESdtYHSvXcF4AgD8M45qoG94r7uhdXP6a5R8WLkCAJyciKwflD+fTNwZHt29HdsmOneWaHbcG1QxqAAABRH84ddv92++mpMt4y92hHT82QQI9XoeaWVkIK4AALmlgxpeMBtfziRapsLJwNq6mf6SFVblQFJrm0e/1VQyQUQ64goAkCkdUr4x9XnJvPJ+3ry6vJwsn5iV/v2tJDlUhVIpInJk3rKqqirZfvzwTC+HlV8fjatYXJI18bj0YLABoBjEDKl9ishqvlSOaHSLvJHVlO/bd3n86jmoqeOneZ811OPp0MpoxjqXEVfemA3cM55hRgFAsXE6Kb0itY754rCO9WsPaiuVj/av2Ne1gu94YUYBQDGyglpIWC+cV+xh1e3v/Y4r7y/wowSYVQAAuTXdcEfejGjBbGEl27aA4F8U8DNaAADwd9frXSud992hxjo1nC2qGXHlvdanQ1i1AgBkw/uqzYFS/W5QHckVVQvHVXT17TzBiAIAHOKY1lx2rYg6l37Nr374FVTKJ6oWdXAs0f5uLunDmALA/4yDWXnJteFWafeHSaV8rLiofNG8ToMvmyPKR1tIqZCYHsX/LSAwowCgiJw4mHkjop+XJr0qTZ1YJAAAAABJRU5ErkJggg=="/>
+                        </svg>
+                          
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <p class="menu__section__name">Tartare de thon assaisonné au yuzu</p>
+                        <p class="menu__section__price">55€</p>
+                    </li>
+                    <li>
+                        <p class="menu__section__name">Bouchée de homard croustillant et sa farandole de petits légumes</p>
+                        <p class="menu__section__price">89€</p>
+                    </li>
+                    <li>
+                        <p class="menu__section__name">Velouté de cèpes aux truffes</p>
+                        <p class="menu__section__price">56€</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu__section menu__dish">
+                <div class="menu__section__heading">
+                    <div class="menu__path menu__path--dish">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="342" height="14" viewBox="0 0 342 14">
+                            <image id="path-left-taste-buds-delight-dish" width="342" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAAOCAYAAAB0BTStAAACHUlEQVR4nO3az0tUURQH8HPvU5uYMYcYixlGSRGhmJFEfMTQQiYUAiHKMlu4cymkkOi/EC0KXeZKN2XOqhYRFBQxiNIPf6DQwrL5UQvljY4j6vjelRvONL1onLGd7/tZXs67i7P4ct55j5X1JUVnE00PXNbve50iSkTTBAAAR8ZahpOx8DJ55AUyYHua9Md+t5hDwAIAHA2b/Zq4ERwtDSVTRvaCQC3FbzWKifY6/bnDRpsIWQCAwrE1TVOfLCh3+kOsz/xUuZ3Ttdr0u9YG/lp161NOOyUQsgAA+clglQXq3RclIxMfSM1XLSfZwDkR9rtp/oLLWDjYyRLCFgDgt0yw0uY2BW+Ol4Rm4+QstD9yovWfNeInFbHVWEWf5ZnHLqI1LlpBjwHAKi5VG+HcATMbrNL6Dm+7PcafFhOuAABW97BDPOry6f2ZNvDcflScMF5Ndu91yFd+qzcKAKBQzz6xTrlSzZRz83MOG70Jde9dvxcUk+gqAMDh5C+rU995IFP4xyrARI0mmPfBe2XwsI9aAABWJ9/05VAqd63K4NDQv9oRO2Wjpav1xlzXRfFS57xydZvVbGxZvX0AAH+LaFTudbGU74zQ8k2sZr+m1vkfrGFmhTW/jSktSz+pPrIq0GIAgIM/pT727l4pJljNsusBGbapNHMsxum8lman5Vn4Gwvk1kc2mAchDADHXZuPffmfYC0GdrQAYA1EtA8dj7WnhE5KeQAAAABJRU5ErkJggg=="/>
+                        </svg>     
+                    </div>
+                    <div class="menu__section__title">
+                        <h3 class="menu__section__title">Pour bien continuer</h3>
+                        <hr/>
+                    </div>
+                    <div class="menu__path menu__path--dish">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="342" height="14" viewBox="0 0 342 14">
+                            <image id="path-right-taste-buds-delight-dish" width="342" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAAOCAYAAAB0BTStAAACB0lEQVR4nO3cMWgTURgH8O/dJURs1BYcNE1pERyUpArFh4RSwVbo0kEKsQ5xcxApRLCULg4Fh9JFB3Fxt9V2EBSkhVBBQkkJhaRUkBJFS4JQTcCECuby5Cteck3SmMRJ8/8tB3f3jrvH8efd9x4nvqbTBAAAf0VuZ4R79q0++SxK0oa+BABomoynRO+TqH6TA5Uv4jtFSQQrAEBjZPYHOV9u6SPP14U/nCCX2fpIm0YPR36OI1gBAP5MZnLUHknpF5djhcEXCfvA91yhotH0sPHA3a62EawAAPvtfdJzzXRzR/PEU+QNfxS+0shUJ6LKUPX3UWTMYzwlokh5sMrVT5oPnQwAreLDDnUnc8LNj7v+mc7vGuJw/IvmqjYiPcg5F2XuD+WnOFT5lH3BOrehX7+zKIJ4owCgtTUWqvM3CtecDgqZ+zTLccmF2FbvTgCAevEKgIVAfvSYo7BkbVIMVi4BWGe3AADgYHcvq4XFQP6q81BppGoySwFy9o02gT4EAKiNJ6km+o0Znv03a6rlOFgl11YxWgUAqK7ruKArp1XoljQe1QpUk40Xut57rQcbKdYCAPzPOEjPnKD3lzqNlQvdas17UsV+P27NQC0G6+1X9seNLCsAAPgXcVh2HVVJ6637elSYtx129e2si9612VXWEqJ1B2k5/gmLxFsCAC2kqbCsGxH9AsOSmfysZ1KlAAAAAElFTkSuQmCC"/>
+                        </svg>                                  
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <p class="menu__section__name">Poulet rôti aux herbes de provence et sa crème de truffe</p>
+                        <p class="menu__section__price">110€</p>
+                    </li>
+                    <li>
+                        <p class="menu__section__name">Langouste rôtie et ses légumes de saison</p>
+                        <p class="menu__section__price">225€</p>
+                    </li>
+                    <li>
+                        <p class="menu__section__name">Côte de boeuf angus et sa purée de panais</p>
+                        <p class="menu__section__price">115€</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu__section menu__dessert">
+                <div class="menu__section__heading">
+                    <div class="menu__path menu__path--dessert">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="14" viewBox="0 0 343 14">
+                            <image id="path-left-taste-buds-delight-dessert" width="343" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVcAAAAOCAYAAACbx1+TAAAB8UlEQVR4nO3bP0wTYRgG8Pf7uNaCsQETK9RFbGBQBopKGIiJwuAgmrg2pE5VB4MmboQQdvbipMbEOBk0bgwSYGAQcHCQIKnR0NCCtKlpbdr7Y94mbbW2cG1xoPf85u+74cnlyXfv3Ynx+eTExk95O9Cd9XpdGgEAQP3E95043XrTbMQF0SWX/tF3Tr086FZVZAsAUDvxIxajpbCiPFq2Z/NXOW0jGu3OXBnxaIstioF4AQCqlCtXNrVqD777qtwr3X7jrDoz1K4/wGkWAMC8QrkmMkRjC81bnxLCXWn3tVPa2z6XNt3foS92OnXEDABQQaFcWSghKTDnyM1fzeAZbdcJ/bXzGH27eFJ7zls8rRo57YgbAKztr3JlmzFJY0sOI5I9/Fx6nEbY4TCiVg8dABrP4wsZr6et+ET/T7lSDSdYAACr4/dTk32Z+/kYZLk8eJ764npa8EnT6oEBAJjBHwRsJ4uVWrZcWftxnZ4O/zpz97x6pxVfYwEAHOjJuhLMryk7FiiVUgW9/GLzz24oz/7HLBYAoFG8upoWPHs1Va5/4hde7yOKf2VXPvwQlb24IwAAinicyk/9VZdrqbVoE+2lRVsoJW9upWhgOyUHeAmKFwCsisepdZerGfyDwma8ad+VSVUonxPSh7sRAI48IvoNi3ewdUpKYrEAAAAASUVORK5CYII="/>
+                        </svg>                                  
+                    </div>
+                    <div class="menu__section__title">
+                        <h3 class="menu__section__title">Pour bien terminer</h3>
+                        <hr/>
+                    </div>
+                    <div class="menu__path menu__path--dessert">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="14" viewBox="0 0 343 14">
+                            <image id="path-right-taste-buds-delight-dessert" width="343" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVcAAAAOCAYAAACbx1+TAAAB40lEQVR4nO3bTSgEYRgH8Gdm3l3byrakpVUilHAgUsomNwchF3KxB4Wjcubi6EAOPnLZ2KvycUXJYfO1DpSPFhdfK1YrrDVm9E6JZXfRcmD/v9PMNFMzT9O/Z56ZES59PgIAgNi5vRKN7enceUnKFMIVACBGyyeMOQ/Y6ppXLDarRNP19wJDUQEAvu9OFmjWI9km9vRL54+vh/dWBHVGphLCFQDgG3iXOn8mDs0dsY73R9VmySOVVlnmywhXAIAoDv0irZyKtg2v1L1wIdVF2rPIpJ50FQU7X9YRrgAQ9/xBIs+1pJVh/Upq9T9Q5v6N2MhnqF+pDZ+z9pQ/ZJj0r9tCwtXjE6l/W++O90IDwP8TCAiWLb9g/ekLS9MRDVYGhGyTErI9JFwnD9nwV5MaACDe8Y51qOpjsHLiy8LZrUjhBrQAAPARn7FO1IQPVnrbuY7usmHUDwAgOt6tNhXK9rb8oCPajtpPBHzW2rxoUFFTAIDw+Gy1IU+2t+Q+Ovh3rJ/ROte+9YRj1BMAIFSZRdksTVUGqtNkR05y+Mf/SNj4jr71N96gAQD8BTxA+WmmGxVXhpFc2UZlJsWg+kosTzGdvda5thfIdtwFAPDX5ZsUZyJTtT+kIskxP9Hb71F/BRE9A05OkZtbyt1jAAAAAElFTkSuQmCC"/>
+                        </svg>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <p class="menu__section__name">Farandole de desserts du chef</p>
+                        <p class="menu__section__price">55€</p>
+                    </li>
+                    <li>
+                        <p class="menu__section__name">Crème brûlée revisitée</p>
+                        <p class="menu__section__price">60€</p>
+                    </li>
+                    <li>
+                        <p class="menu__section__name">Tiramisu à la noisette</p>
+                        <p class="menu__section__price">55€</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </article>
+</main>
+<footer class="footer">
+    <nav class="nav">
+        <a class="nav_link" href="Mentionslégales.html"><h4 class="mentions">Mentions légales</h4></a>
+        <a class="nav_link" href="mailto:agbo.arnaud@yahoo.fr"><h4 class="contact">Contactez-nous</h4></a>
+    </nav>
+</footer>
+<script src="https://kit.fontawesome.com/60faac5768.js" crossorigin="anonymous"></script>
+</body>
+</html>

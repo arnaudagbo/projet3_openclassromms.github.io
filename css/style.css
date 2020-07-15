@@ -184,7 +184,6 @@ body {
   min-height: 1058px;
   margin: 1.5rem;
   padding: 0 2rem;
-  background-color: #FCDFDB;
   -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
   box-shadow: 0 0 10px 3px #D8D8D8;
 }
@@ -238,7 +237,8 @@ body {
 .menu__section__title {
   margin: 0;
   font-size: 1.3rem;
-  font-weight: normal;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 .menu__section__title hr {
   margin: 0;
@@ -312,6 +312,23 @@ button {
   button {
     font-size: 1.1rem;
   }
+}
+
+.note_page {
+  background-color: #FCDFDB;
+  color: #3D1319;
+  font-weight: 100;
+}
+.note_page p {
+  font-family: "Architects Daughter", cursive;
+}
+
+.chic_page {
+  background-color: #FFF5FE;
+}
+
+.pre_title {
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes dots {

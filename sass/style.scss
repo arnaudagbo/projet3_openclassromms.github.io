@@ -171,7 +171,6 @@ body{
     min-height: 1058px;
     margin: 1.5rem;
     padding: 0 2rem;
-    background-color: $note-color;
     -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
     box-shadow: 0 0 10px 3px #D8D8D8;
     @media screen and (max-width: 870px) {
@@ -219,7 +218,8 @@ body{
         &__title {
             margin: 0;
             font-size: 1.3rem;
-            font-weight: normal;
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
             hr {
                 margin: 0;
                 height: 2px;
@@ -288,6 +288,22 @@ button {
     }
 }
 
+.note_page{
+    background-color: $note-color;
+    color: $note-font-color;
+    
+    font-weight: 100;
+    p{
+        font-family: 'Architects Daughter', cursive;
+    }
+}
+
+.chic_page{
+    background-color: $chic-color;
+}
+.pre_title{
+    font-family:"Montserrat", sans-serif;
+}
 // animation 3 petits points
 @keyframes dots {
     50% { opacity: 0;}

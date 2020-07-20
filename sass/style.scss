@@ -319,6 +319,13 @@ button {
     &__title{
         font-family: "Montserrat", sans-serif;
     }
+    &__header{
+            background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
+            background: linear-gradient(90deg, #E38913, #8F5BFE);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
 }
 
 .delight_page{

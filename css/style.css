@@ -344,6 +344,13 @@ button {
 .chic_page__title {
   font-family: "Montserrat", sans-serif;
 }
+.chic_page__header {
+  background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
+  background: linear-gradient(90deg, #E38913, #8F5BFE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .delight_page h2 {
   font-family: "Dancing Script", cursive;

@@ -211,7 +211,6 @@ body {
   margin: 0;
   padding: 0 1rem;
   font-weight: normal;
-  font-family: "Devonshire", cursive;
   font-size: 3rem;
 }
 .menu__content {
@@ -325,6 +324,20 @@ button {
 
 .chic_page {
   background-color: #FFF5FE;
+}
+.chic_page h2 {
+  font-family: "Croissant One", cursive;
+  font-size: 2rem;
+}
+.chic_page__starter {
+  color: #C67412;
+  font-size: 1.2rem;
+}
+.chic_page__plates {
+  color: #A56799;
+}
+.chic_page__desserts {
+  color: #6E4CCC;
 }
 
 .pre_title {

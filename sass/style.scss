@@ -193,7 +193,6 @@ body{
         margin: 0;
         padding: 0 1rem;
         font-weight: normal;
-        font-family: "Devonshire", cursive;
         font-size: 3rem;
     }
     &__content {
@@ -300,6 +299,23 @@ button {
 
 .chic_page{
     background-color: $chic-color;
+    h2 {
+        font-family: "Croissant One", cursive;
+        font-size: 2rem;
+    }
+    &__starter {
+        color: #C67412;
+        font-size: 1.2rem;
+    }
+    &__plates {
+        color: #A56799;
+    }
+    &__desserts {
+        color: #6E4CCC;
+        
+    }
+
+
 }
 .pre_title{
     font-family:"Montserrat", sans-serif;

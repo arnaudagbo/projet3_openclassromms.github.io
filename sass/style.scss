@@ -218,7 +218,6 @@ body{
             margin: 0;
             font-size: 1.3rem;
             font-weight: bold;
-            font-family: "Montserrat", sans-serif;
             hr {
                 margin: 0;
                 height: 2px;
@@ -292,7 +291,10 @@ button {
     color: $note-font-color;
     
     font-weight: 100;
-    p{
+    h2{
+        font-family: 'devonshire', cursive;
+    }
+    p,h3{
         font-family: 'Architects Daughter', cursive;
     }
 }
@@ -314,8 +316,28 @@ button {
         color: #6E4CCC;
         
     }
+    &__title{
+        font-family: "Montserrat", sans-serif;
+    }
+}
 
+.delight_page{
+    h2{
+        font-family: 'Dancing Script', cursive;
+    }
+    &__content {
+        font-family: 'Architects Daughter', cursive;
+    }
+}
 
+.taste_page{
+    background-color: #f9fff9;
+    h2{
+        font-family: 'kaushan script', cursive;
+    }
+    &__content{
+        font-family: 'Architects Daughter', cursive;
+    }
 }
 .pre_title{
     font-family:"Montserrat", sans-serif;

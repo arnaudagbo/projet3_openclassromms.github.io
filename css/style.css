@@ -237,7 +237,6 @@ body {
   margin: 0;
   font-size: 1.3rem;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
 }
 .menu__section__title hr {
   margin: 0;
@@ -318,7 +317,10 @@ button {
   color: #3D1319;
   font-weight: 100;
 }
-.note_page p {
+.note_page h2 {
+  font-family: "devonshire", cursive;
+}
+.note_page p, .note_page h3 {
   font-family: "Architects Daughter", cursive;
 }
 
@@ -338,6 +340,26 @@ button {
 }
 .chic_page__desserts {
   color: #6E4CCC;
+}
+.chic_page__title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.delight_page h2 {
+  font-family: "Dancing Script", cursive;
+}
+.delight_page__content {
+  font-family: "Architects Daughter", cursive;
+}
+
+.taste_page {
+  background-color: #f9fff9;
+}
+.taste_page h2 {
+  font-family: "kaushan script", cursive;
+}
+.taste_page__content {
+  font-family: "Architects Daughter", cursive;
 }
 
 .pre_title {

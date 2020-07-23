@@ -82,6 +82,13 @@ body{
 }
 .chic{
     background-color: $chic-color;
+    .transition{
+        background: -webkit-linear-gradient(90deg,$chic-gradient-start-color ,$chic-gradient-end-color);
+            background: linear-gradient(90deg, $chic-gradient-start-color ,$chic-gradient-end-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
     h2{
         font-family: 'Croissant One', cursive;
     }
@@ -90,8 +97,15 @@ body{
         font-size: 2rem;
     }
 } 
-.delice{
+.delight{
     background-color: $delight-color;
+    .transition{
+        background: -webkit-linear-gradient(90deg,$delight-gradient-start-color ,$delight-gradient-end-color);
+        background: linear-gradient(90deg, $delight-gradient-start-color ,$delight-gradient-end-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     h2{
         font-family: 'Dancing Script', cursive;
         font-size: 2rem;
@@ -103,6 +117,13 @@ body{
 }
 .taste{
     background-color: $taste-color;
+    .transition{
+        background: -webkit-linear-gradient(90deg,$taste-gradient-start-color ,$taste-gradient-end-color);
+        background: linear-gradient(90deg, $taste-gradient-start-color ,$taste-gradient-end-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     h2{
         font-family: 'kaushan script', cursive;
         font-size: 2rem;

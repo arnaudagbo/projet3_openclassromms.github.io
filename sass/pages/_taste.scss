@@ -1,4 +1,4 @@
-.taste_page{
+.menu--taste{
     background-color: $taste-background-color;
     h2{
         font-family: 'kaushan script', cursive;
@@ -12,5 +12,22 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    .menu{
+        &__section {
+            &__title {
+                &:hover hr {
+                    background-color: black ;
+                    animation: underline-anim 2s;  
+                }
+                @media screen and (max-width: 870px) {
+                    font-size: 1.1rem;
+                    &:hover hr {
+                        background: none;
+                    }
+                }
+            }
+        }
     }
 }

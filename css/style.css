@@ -75,21 +75,33 @@
   font-family: "Architects Daughter", cursive;
 }
 
-.taste_page {
+.menu--taste {
   background-color: #f9fff9;
 }
-.taste_page h2 {
+.menu--taste h2 {
   font-family: "kaushan script", cursive;
 }
-.taste_page__content {
+.menu--taste__content {
   font-family: "Architects Daughter", cursive;
 }
-.taste_page__header {
+.menu--taste__header {
   background: -webkit-linear-gradient(90deg, #3D923A, #BEFF7F);
   background: linear-gradient(90deg, #3D923A, #BEFF7F);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.menu--taste .menu__section__title:hover hr {
+  background-color: black;
+  animation: underline-anim 2s;
+}
+@media screen and (max-width: 870px) {
+  .menu--taste .menu__section__title {
+    font-size: 1.1rem;
+  }
+  .menu--taste .menu__section__title:hover hr {
+    background: none;
+  }
 }
 
 @keyframes dots {

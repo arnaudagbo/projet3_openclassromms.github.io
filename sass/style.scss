@@ -87,7 +87,13 @@ body{
     }
     i{
         font-size: 3rem;
-    }
+        background: -webkit-linear-gradient(90deg, $note-gradient-start-color,$note-gradient-end-color);
+        background: linear-gradient(90deg,$note-gradient-start-color,$note-gradient-end-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+    
 }
 .chic{
     background-color: $chic-color;

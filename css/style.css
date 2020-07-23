@@ -63,16 +63,50 @@
   }
 }
 
-.note_page {
+.menu--note {
   background-color: #FCDFDB;
   color: #3D1319;
   font-weight: 100;
 }
-.note_page h2 {
+.menu--note h2 {
   font-family: "devonshire", cursive;
 }
-.note_page p, .note_page h3 {
+.menu--note p, .menu--note h3 {
   font-family: "Architects Daughter", cursive;
+}
+.menu--note i {
+  background: -webkit-linear-gradient(90deg, #f15c61, #f6916a);
+  background: linear-gradient(90deg, #f15c61, #f6916a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu--note .menu__section__title:hover hr {
+  background-color: black;
+  animation: underline-anim 2s;
+}
+@media screen and (max-width: 870px) {
+  .menu--note .menu__section__title {
+    font-size: 1.1rem;
+  }
+  .menu--note .menu__section__title:hover hr {
+    background: none;
+  }
+}
+.menu--note .menu__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.menu--note .menu__footer i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.menu--note .menu__footer__heading {
+  font-family: "devonshire", cursive;
+  font-size: 2rem;
+  font-weight: normal;
 }
 
 .menu--taste {
@@ -235,6 +269,11 @@ body {
 }
 .note i {
   font-size: 3rem;
+  background: -webkit-linear-gradient(90deg, #f15c61, #f6916a);
+  background: linear-gradient(90deg, #f15c61, #f6916a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .chic {

@@ -1,4 +1,4 @@
-.note_page{
+.menu--note{
     background-color: $note-color;
     color: $note-font-color;
     
@@ -9,4 +9,43 @@
     p,h3{
         font-family: 'Architects Daughter', cursive;
     }
+    i{
+        background: -webkit-linear-gradient(90deg, $note-gradient-start-color,$note-gradient-end-color);
+        background: linear-gradient(90deg,$note-gradient-start-color,$note-gradient-end-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .menu{
+        &__section {
+                &__title {
+                    &:hover hr {
+                        background-color: black ;
+                        animation: underline-anim 2s;  
+                    }
+                    @media screen and (max-width: 870px) {
+                        font-size: 1.1rem;
+                        &:hover hr {
+                            background: none;
+                        }
+                    }
+                }
+            }
+            &__footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 3rem;
+                i{
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                }
+                &__heading {
+                    font-family: 'devonshire', cursive;
+                    font-size: 2rem;
+                    font-weight: normal;
+                }
+            }    
+    }
+    
 }

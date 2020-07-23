@@ -1,0 +1,12 @@
+.note_page{
+    background-color: $note-color;
+    color: $note-font-color;
+    
+    font-weight: 100;
+    h2{
+        font-family: 'devonshire', cursive;
+    }
+    p,h3{
+        font-family: 'Architects Daughter', cursive;
+    }
+}

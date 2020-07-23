@@ -1,0 +1,27 @@
+.chic_page{
+    background-color: $chic-color;
+    h2 {
+        font-family: "Croissant One", cursive;
+        font-size: 2rem;
+    }
+    &__starter {
+        color: $chic-starter-color;
+    }
+    &__plates {
+        color: $chic-plates-color;
+    }
+    &__desserts {
+        color: $chic-desserts-color;
+        
+    }
+    &__title{
+        font-family: "Montserrat", sans-serif;
+    }
+    &__header{
+            background: -webkit-linear-gradient(90deg,$chic-gradient-start-color ,$chic-gradient-end-color);
+            background: linear-gradient(90deg, $chic-gradient-start-color ,$chic-gradient-end-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+}

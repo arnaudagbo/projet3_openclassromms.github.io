@@ -1,3 +1,73 @@
+.chic_page {
+  background-color: #FFF5FE;
+}
+.chic_page h2 {
+  font-family: "Croissant One", cursive;
+  font-size: 2rem;
+}
+.chic_page__starter {
+  color: #C67412;
+}
+.chic_page__plates {
+  color: #A56799;
+}
+.chic_page__desserts {
+  color: #6E4CCC;
+}
+.chic_page__title {
+  font-family: "Montserrat", sans-serif;
+}
+.chic_page__header {
+  background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
+  background: linear-gradient(90deg, #E38913, #8F5BFE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.delight_page h2 {
+  font-family: "Dancing Script", cursive;
+}
+.delight_page__content {
+  font-family: "Architects Daughter", cursive;
+}
+.delight_page__header {
+  background: -webkit-linear-gradient(90deg, #0925DB, #42A5FF);
+  background: linear-gradient(90deg, #0925DB, #42A5FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.note_page {
+  background-color: #FCDFDB;
+  color: #3D1319;
+  font-weight: 100;
+}
+.note_page h2 {
+  font-family: "devonshire", cursive;
+}
+.note_page p, .note_page h3 {
+  font-family: "Architects Daughter", cursive;
+}
+
+.taste_page {
+  background-color: #f9fff9;
+}
+.taste_page h2 {
+  font-family: "kaushan script", cursive;
+}
+.taste_page__content {
+  font-family: "Architects Daughter", cursive;
+}
+.taste_page__header {
+  background: -webkit-linear-gradient(90deg, #3D923A, #BEFF7F);
+  background: linear-gradient(90deg, #3D923A, #BEFF7F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -344,77 +414,6 @@ button {
   button {
     font-size: 1.1rem;
   }
-}
-
-.note_page {
-  background-color: #FCDFDB;
-  color: #3D1319;
-  font-weight: 100;
-}
-.note_page h2 {
-  font-family: "devonshire", cursive;
-}
-.note_page p, .note_page h3 {
-  font-family: "Architects Daughter", cursive;
-}
-
-.chic_page {
-  background-color: #FFF5FE;
-}
-.chic_page h2 {
-  font-family: "Croissant One", cursive;
-  font-size: 2rem;
-}
-.chic_page__starter {
-  color: #C67412;
-  font-size: 1.2rem;
-}
-.chic_page__plates {
-  color: #A56799;
-}
-.chic_page__desserts {
-  color: #6E4CCC;
-}
-.chic_page__title {
-  font-family: "Montserrat", sans-serif;
-}
-.chic_page__header {
-  background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
-  background: linear-gradient(90deg, #E38913, #8F5BFE);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.delight_page h2 {
-  font-family: "Dancing Script", cursive;
-}
-.delight_page__content {
-  font-family: "Architects Daughter", cursive;
-}
-.delight_page__header {
-  background: -webkit-linear-gradient(90deg, #0925DB, #42A5FF);
-  background: linear-gradient(90deg, #0925DB, #42A5FF);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.taste_page {
-  background-color: #f9fff9;
-}
-.taste_page h2 {
-  font-family: "kaushan script", cursive;
-}
-.taste_page__content {
-  font-family: "Architects Daughter", cursive;
-}
-.taste_page__header {
-  background: -webkit-linear-gradient(90deg, #3D923A, #BEFF7F);
-  background: linear-gradient(90deg, #3D923A, #BEFF7F);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .pre_title {

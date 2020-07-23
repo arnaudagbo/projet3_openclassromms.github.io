@@ -1,4 +1,9 @@
 @import "./utils/variables";
+@import "./pages/chic.scss";
+@import "./pages/delight";
+@import "./pages/note";
+@import "./pages/taste";
+
 
 body{
     // fixe toutes les marges du body à 0
@@ -312,80 +317,6 @@ button {
     }
 }
 
-.note_page{
-    background-color: $note-color;
-    color: $note-font-color;
-    
-    font-weight: 100;
-    h2{
-        font-family: 'devonshire', cursive;
-    }
-    p,h3{
-        font-family: 'Architects Daughter', cursive;
-    }
-}
-
-.chic_page{
-    background-color: $chic-color;
-    h2 {
-        font-family: "Croissant One", cursive;
-        font-size: 2rem;
-    }
-    &__starter {
-        color: $chic-starter-color;
-        font-size: 1.2rem;
-    }
-    &__plates {
-        color: $chic-plates-color;
-    }
-    &__desserts {
-        color: $chic-desserts-color;
-        
-    }
-    &__title{
-        font-family: "Montserrat", sans-serif;
-    }
-    &__header{
-            background: -webkit-linear-gradient(90deg,$chic-gradient-start-color ,$chic-gradient-end-color);
-            background: linear-gradient(90deg, $chic-gradient-start-color ,$chic-gradient-end-color);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-    }
-}
-
-.delight_page{
-    h2{
-        font-family: 'Dancing Script', cursive;
-    }
-    &__content {
-        font-family: 'Architects Daughter', cursive;
-    }
-    &__header{
-        background: -webkit-linear-gradient(90deg,$delight-gradient-start-color ,$delight-gradient-end-color);
-        background: linear-gradient(90deg, $delight-gradient-start-color ,$delight-gradient-end-color);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
-}
-
-.taste_page{
-    background-color: $taste-background-color;
-    h2{
-        font-family: 'kaushan script', cursive;
-    }
-    &__content{
-        font-family: 'Architects Daughter', cursive;
-    }
-    &__header{
-        background: -webkit-linear-gradient(90deg,$taste-gradient-start-color ,$taste-gradient-end-color);
-        background: linear-gradient(90deg, $taste-gradient-start-color ,$taste-gradient-end-color);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-}
-}
 .pre_title{
     font-family:"Montserrat", sans-serif;
 }

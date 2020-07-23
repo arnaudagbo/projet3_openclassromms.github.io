@@ -102,14 +102,14 @@ body {
   font-family: "itim", cursive;
 }
 
-.palette {
+.taste {
   background-color: #f9fff9;
 }
-.palette h2 {
+.taste h2 {
   font-family: "kaushan script", cursive;
   font-size: 2rem;
 }
-.palette h3 {
+.taste h3 {
   font-size: 2rem;
   font-family: "itim", cursive;
 }
@@ -358,6 +358,13 @@ button {
 .delight_page__content {
   font-family: "Architects Daughter", cursive;
 }
+.delight_page__header {
+  background: -webkit-linear-gradient(90deg, #0925DB, #42A5FF);
+  background: linear-gradient(90deg, #0925DB, #42A5FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .taste_page {
   background-color: #f9fff9;
@@ -367,6 +374,13 @@ button {
 }
 .taste_page__content {
   font-family: "Architects Daughter", cursive;
+}
+.taste_page__header {
+  background: -webkit-linear-gradient(90deg, #3D923A, #BEFF7F);
+  background: linear-gradient(90deg, #3D923A, #BEFF7F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .pre_title {

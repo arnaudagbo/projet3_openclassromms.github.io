@@ -1,12 +1,4 @@
-// variables
-$header-color: #559c84;
-$header-font-color: #fdcb46;
-$header-font: 'Montserrat', sans-serif;
-$note-color: #FCDFDB;
-$note-font-color: #3D1319;
-$chic-color: #FFF5FE;
-$delice-color: #F8F8F8;
-$palette-color: #f9fff9;
+@import "./utils/variables";
 
 body{
     // fixe toutes les marges du body à 0
@@ -46,7 +38,7 @@ body{
     padding-bottom: 2rem;
 }
 .menu_resto{
-    box-shadow: 0 0 10px 3px #D8D8D8;
+    box-shadow: 0 0 10px 3px $box-shadow-menu-color;
     display: flex;
     width: 350px;
     height: 500px;
@@ -99,7 +91,7 @@ body{
     }
 }
 .delice{
-    background-color: $delice-color;
+    background-color: $delight-color;
     h2{
         font-family: 'Dancing Script', cursive;
         font-size: 2rem;
@@ -109,8 +101,8 @@ body{
         font-family: 'itim', cursive;
     }
 }
-.palette{
-    background-color: $palette-color;
+.taste{
+    background-color: $taste-color;
     h2{
         font-family: 'kaushan script', cursive;
         font-size: 2rem;
@@ -171,8 +163,8 @@ body{
     min-height: 1058px;
     margin: 1.5rem;
     padding: 0 2rem;
-    -webkit-box-shadow: 0 0 8px 3px #D8D8D8;
-    box-shadow: 0 0 10px 3px #D8D8D8;
+    -webkit-box-shadow: 0 0 8px 3px $box-shadow-menu-color;
+    box-shadow: 0 0 10px 3px $box-shadow-menu-color;
     @media screen and (max-width: 870px) {
         width: 85%;
         margin: 1rem;
@@ -306,22 +298,22 @@ button {
         font-size: 2rem;
     }
     &__starter {
-        color: #C67412;
+        color: $chic-starter-color;
         font-size: 1.2rem;
     }
     &__plates {
-        color: #A56799;
+        color: $chic-plates-color;
     }
     &__desserts {
-        color: #6E4CCC;
+        color: $chic-desserts-color;
         
     }
     &__title{
         font-family: "Montserrat", sans-serif;
     }
     &__header{
-            background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
-            background: linear-gradient(90deg, #E38913, #8F5BFE);
+            background: -webkit-linear-gradient(90deg,$chic-gradient-start-color ,$chic-gradient-end-color);
+            background: linear-gradient(90deg, $chic-gradient-start-color ,$chic-gradient-end-color);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -335,16 +327,30 @@ button {
     &__content {
         font-family: 'Architects Daughter', cursive;
     }
+    &__header{
+        background: -webkit-linear-gradient(90deg,$delight-gradient-start-color ,$delight-gradient-end-color);
+        background: linear-gradient(90deg, $delight-gradient-start-color ,$delight-gradient-end-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
 }
 
 .taste_page{
-    background-color: #f9fff9;
+    background-color: $taste-background-color;
     h2{
         font-family: 'kaushan script', cursive;
     }
     &__content{
         font-family: 'Architects Daughter', cursive;
     }
+    &__header{
+        background: -webkit-linear-gradient(90deg,$taste-gradient-start-color ,$taste-gradient-end-color);
+        background: linear-gradient(90deg, $taste-gradient-start-color ,$taste-gradient-end-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
 }
 .pre_title{
     font-family:"Montserrat", sans-serif;

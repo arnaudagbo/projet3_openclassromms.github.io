@@ -3,6 +3,7 @@
 @import "./pages/delight";
 @import "./pages/note";
 @import "./pages/taste";
+@import "./utils/keyframes";
 
 
 body{
@@ -156,20 +157,6 @@ body{
     justify-content: space-between;
     padding: 0 1rem;
 }
-// animation footer
-@keyframes wiggle {
-    0% { transform: translate(1px, 1px); }
-    10% { transform: translate(-1px, -2px); }
-    20% { transform: translate(-3px, 0px); }
-    30% { transform: translate(3px, 2px); }
-    40% { transform: translate(1px, -1px); }
-    50% { transform: translate(-1px, 2px); }
-    60% { transform: translate(-3px, 1px); }
-    70% { transform: translate(3px, 1px); }
-    80% { transform: translate(-1px, -1px); }
-    90% { transform: translate(1px, 2px); }
-    100% { transform: translate(1px, -2px); }
-}
 
 .nav_link{
     text-decoration: none;
@@ -320,10 +307,7 @@ button {
 .pre_title{
     font-family:"Montserrat", sans-serif;
 }
-// animation 3 petits points
-@keyframes dots {
-    50% { opacity: 0;}
-}
+
 span {
     font-size: 1.7rem;
     display: inline-block;

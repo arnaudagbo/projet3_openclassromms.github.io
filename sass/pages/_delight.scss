@@ -1,15 +1,31 @@
-.delight_page{
+.menu--delight{
     h2{
         font-family: 'Dancing Script', cursive;
     }
-    &__content {
+    .menu{
+        &__content {
         font-family: 'Architects Daughter', cursive;
-    }
+        }
     &__header{
         background: -webkit-linear-gradient(90deg,$delight-gradient-start-color ,$delight-gradient-end-color);
         background: linear-gradient(90deg, $delight-gradient-start-color ,$delight-gradient-end-color);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        }
+        &__section {
+            &__title {
+                &:hover hr {
+                    background-color: black ;
+                    animation: underline-anim 2s;  
+                }
+                @media screen and (max-width: 870px) {
+                    font-size: 1.1rem;
+                    &:hover hr {
+                        background: none;
+                    }
+                }
+            }
+        }
     }
 }

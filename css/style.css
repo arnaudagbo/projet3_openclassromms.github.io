@@ -25,18 +25,30 @@
   -webkit-text-fill-color: transparent;
 }
 
-.delight_page h2 {
+.menu--delight h2 {
   font-family: "Dancing Script", cursive;
 }
-.delight_page__content {
+.menu--delight .menu__content {
   font-family: "Architects Daughter", cursive;
 }
-.delight_page__header {
+.menu--delight .menu__header {
   background: -webkit-linear-gradient(90deg, #0925DB, #42A5FF);
   background: linear-gradient(90deg, #0925DB, #42A5FF);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.menu--delight .menu__section__title:hover hr {
+  background-color: black;
+  animation: underline-anim 2s;
+}
+@media screen and (max-width: 870px) {
+  .menu--delight .menu__section__title {
+    font-size: 1.1rem;
+  }
+  .menu--delight .menu__section__title:hover hr {
+    background: none;
+  }
 }
 
 .note_page {
@@ -68,6 +80,54 @@
   -webkit-text-fill-color: transparent;
 }
 
+@keyframes dots {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(-1px, -2px);
+  }
+  20% {
+    transform: translate(-3px, 0px);
+  }
+  30% {
+    transform: translate(3px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(-3px, 1px);
+  }
+  70% {
+    transform: translate(3px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  90% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(1px, -2px);
+  }
+}
+@keyframes underline-anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -224,41 +284,6 @@ body {
   padding: 0 1rem;
 }
 
-@keyframes wiggle {
-  0% {
-    transform: translate(1px, 1px);
-  }
-  10% {
-    transform: translate(-1px, -2px);
-  }
-  20% {
-    transform: translate(-3px, 0px);
-  }
-  30% {
-    transform: translate(3px, 2px);
-  }
-  40% {
-    transform: translate(1px, -1px);
-  }
-  50% {
-    transform: translate(-1px, 2px);
-  }
-  60% {
-    transform: translate(-3px, 1px);
-  }
-  70% {
-    transform: translate(3px, 1px);
-  }
-  80% {
-    transform: translate(-1px, -1px);
-  }
-  90% {
-    transform: translate(1px, 2px);
-  }
-  100% {
-    transform: translate(1px, -2px);
-  }
-}
 .nav_link {
   text-decoration: none;
   color: #fdcb46;
@@ -420,11 +445,6 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
-@keyframes dots {
-  50% {
-    opacity: 0;
-  }
-}
 span {
   font-size: 1.7rem;
   display: inline-block;

@@ -1,28 +1,40 @@
-.chic_page {
+.menu--chic {
   background-color: #FFF5FE;
 }
-.chic_page h2 {
+.menu--chic h2 {
   font-family: "Croissant One", cursive;
   font-size: 2rem;
 }
-.chic_page__starter {
+.menu--chic__starter {
   color: #C67412;
 }
-.chic_page__plates {
+.menu--chic__plates {
   color: #A56799;
 }
-.chic_page__desserts {
+.menu--chic__desserts {
   color: #6E4CCC;
 }
-.chic_page__title {
+.menu--chic__title {
   font-family: "Montserrat", sans-serif;
 }
-.chic_page__header {
+.menu--chic__header {
   background: -webkit-linear-gradient(90deg, #E38913, #8F5BFE);
   background: linear-gradient(90deg, #E38913, #8F5BFE);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.menu--chic .menu__section__title:hover hr {
+  background-color: black;
+  animation: underline-anim 2s;
+}
+@media screen and (max-width: 870px) {
+  .menu--chic .menu__section__title {
+    font-size: 1.1rem;
+  }
+  .menu--chic .menu__section__title:hover hr {
+    background: none;
+  }
 }
 
 .menu--delight h2 {

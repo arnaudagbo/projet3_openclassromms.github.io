@@ -1,4 +1,4 @@
-.chic_page{
+.menu--chic{
     background-color: $chic-color;
     h2 {
         font-family: "Croissant One", cursive;
@@ -24,4 +24,21 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
     }
+    .menu{
+        &__section {
+                &__title {
+                    &:hover hr {
+                        background-color: black ;
+                        animation: underline-anim 2s;  
+                    }
+                    @media screen and (max-width: 870px) {
+                        font-size: 1.1rem;
+                        &:hover hr {
+                            background: none;
+                        }
+                    }
+                }
+            }
+    }
+    
 }
